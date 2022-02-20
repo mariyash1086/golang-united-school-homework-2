@@ -13,17 +13,17 @@ import (
 // CalcSquare(10.0, SidesCircle)
 type sideNameType int
 
-const SideTriangle sideNameType = 3
-const SideSquare sideNameType = 4
-const SideCircle sideNameType = 0
+const SidesTriangle sideNameType = 3
+const SidesSquare sideNameType = 4
+const SidesCircle sideNameType = 0
 
 func CalcSquare(sideLen float64, sidesNum sideNameType) float64 {
 	switch sidesNum {
-	case SideTriangle:
+	case SidesTriangle:
 		return math.Pow(sideLen, 2) * math.Sqrt(3) / 4
-	case SideSquare:
+	case SidesSquare:
 		return math.Pow(sideLen, 2)
-	case SideCircle:
+	case SidesCircle:
 		return math.Pow(sideLen, 2) * math.Pi
 	default:
 		return 0
