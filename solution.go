@@ -1,4 +1,4 @@
-package HW2
+package square
 
 import (
 	"math"
@@ -26,6 +26,6 @@ func CalcSquare(sideLen float64, sidesNum sideNameType) float64 {
 	case SidesCircle:
 		return math.Pow(sideLen, 2) * math.Pi
 	default:
-		return 0
+		return 0.00
 	}
 }
