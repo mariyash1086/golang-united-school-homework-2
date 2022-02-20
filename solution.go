@@ -1,4 +1,4 @@
-package solution
+package HW2
 
 import (
 	"math"
